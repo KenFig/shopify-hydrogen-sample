@@ -4,13 +4,8 @@ export default defineConfig({
   shopify: () => ({
     defaultCountryCode: 'JP',
     defaultLanguageCode: 'JA',
-    storeDomain:
-      // @ts-ignore
-      Oxygen?.env?.SHOPIFY_STORE_DOMAIN || 'figmentresearchshop2.myshopify.com',
-    storefrontToken:
-      // @ts-ignore
-      Oxygen?.env?.SHOPIFY_STOREFRONT_API_PUBLIC_TOKEN ||
-      'bb7bb84b7f7872ee7743d133f22810a0',
+    storeDomain: 'figmentresearchshop2.myshopify.com',
+    storefrontToken: 'bb7bb84b7f7872ee7743d133f22810a0',
     storefrontApiVersion: '2022-07',
   }),
   session: CookieSessionStorage('__session', {
